@@ -85,7 +85,7 @@ class FalconTemplate:
 
                 response.content_type = falcon.MEDIA_HTML
                 response.status = falcon.HTTP_200
-                response.body = self._make_template(
+                response.text = self._make_template(
                     template, response.context
                 )
             return wrapper
